@@ -451,13 +451,13 @@ const pokedex = [
   // -------------------------------------------------------------
         
   // function compareAtt(attribute) {
-  //   let p1Att = p1Current[0][attribute];
-  //   let p2Att = p2Current[0][attribute];
+  //   let p1Atts = p1CurrentlyInPlay;
+  //   let p2Atts = p2CurrentlyInPlay;
   
   //   if(attribute == "HP" || attribute == "Attack" || attribute == "Defence" || attribute == "Speed") {
-  //     if(p1Att > p2Att) {
+  //     if(p1Atts > p2Atts) {
   //       winningAtt("p1-Wins");
-  //     } else if (p2Att > p1Att) {
+  //     } else if (p2Atts > p1Atts) {
   //       winningAtt("p2-Wins")
   //     } else {
   //       winningAtt("Draw")
@@ -466,6 +466,7 @@ const pokedex = [
   // }
           
   // function winningAtt()
+  // console.log(winningAtt)
 
   // -------------------------------------------------------------
   // Where to allocate Cards after Outcome of Attributes
@@ -488,10 +489,10 @@ const pokedex = [
   // roundOutcome()
 
   // -------------------------------------------------------------
-  // Order of Play of the Game
+  // Conculsion of the Game
   // -------------------------------------------------------------
   
-  // function playGame(){
+  // function endGame(){
   //   if(p1Cards < 30 && p2Cards < 30){
   //     currentCard()
   //   } else if (p1Cards.length == 30){
