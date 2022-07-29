@@ -1,4 +1,4 @@
-const pokedex = [
+export const pokedex = [
   {
     id: 1,
     name: {
@@ -35369,4 +35369,4 @@ const pokedex = [
         "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/898.png",
     },
   },
-];
+]
