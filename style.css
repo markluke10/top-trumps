@@ -44,7 +44,7 @@ h5{
     background-color: yellow;
     border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
-    height: 525px;
+    height: 580px;
     width: 250px;
     
 }
@@ -57,20 +57,29 @@ h5{
     margin: 10px;
     border-radius: 15px 15px 15px 15px;
 }
+#P2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFdwQqA5axP7-V6nE-mEpSMyPb4WveVWzzLw&usqp=CAU");
+    background-size:cover;
+    background-position: center;
+    background-color: white;
+    padding: 20px;
+    border: 20px;
+    margin: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
 #cardP2{
     display: flex;
     flex-direction: column;
     background-color: yellow;
     border: 1px solid black;
     border-radius: 15px 15px 15px 15px;
-    height: 520px;
+    height: 580px;
     width: 250px;
-    padding: 5px;
     
 }
 #cardP2Img{
     background-color: white;
-    height: 50%;
+    height: 90%;
     width: 90%;
     border: 10px;
     padding: 2px;
@@ -105,7 +114,7 @@ h5{
     align-items: flex-start;
     background-color: white;
     border: 2px solid black;
-    text-indent: 5px;
+    text-indent: 1px;
     padding: 5px;
     margin: 4px;
     border-radius: 15px 15px 15px 15px;

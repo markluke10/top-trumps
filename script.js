@@ -366,13 +366,19 @@ const pokedex = [
   // -------------------------------------------------------------
   let p1Cards = [];
   let p2Cards = [];
-  console.log(p1Cards)
+  // console.log(p1Cards)
     
   // -------------------------------------------------------------
   // Player 1 & 2 No. of Cards Held
   // -------------------------------------------------------------
-  let p1NoOfCards = document.getElementById("p1NoOfCards")
-  let p2NoOfCards = document.getElementById("p2NoOfCards")
+  // let p1NoOfCards = document.getElementById("p1NoOfCards")
+  // let p2NoOfCards = document.getElementById("p2NoOfCards")
+
+  // function numberOfCardsHeld(){
+  //   document.getElementById("p1NoOfCards") = ("No. of Cards:" + p1Cards);
+  // }
+  // numberOfCardsHeld()
+  // console.log(numberOfCardsHeld)
 
   // -------------------------------------------------------------
   // Shuffle Cards
@@ -386,7 +392,7 @@ const pokedex = [
   // -------------------------------------------------------------
   function dealingPlayerCard() {
 
-    for(i=0;1<30;i++){
+    for(i=0;i<30;i++){
       if([i] % 2 == 0){
         p1Cards.push(pokedex[i])
       } else {
@@ -394,6 +400,9 @@ const pokedex = [
       }
     }
   }
+  dealingPlayerCard()
+  console.log(p1Cards)
+  console.log(p2Cards)
 
   // -------------------------------------------------------------
   // Current cards in play
@@ -404,97 +413,117 @@ const pokedex = [
   // -------------------------------------------------------------
   // Place a Card on the Board
   // -------------------------------------------------------------
+  p1CurrentlyInPlay = p1Cards.shift()
+  p2CurrentlyInPlay = p2Cards.shift()
 
 
   // -------------------------------------------------------------
   // Getting a Current card into play
   // -------------------------------------------------------------
-  function currentCard() {
-          // Select a random card from both player's deck
-          let p1 = Math.floor((Math.random()* p1Cards.length));
-          let p2 = Math.floor((Math.random()* p2Cards.length));
-        
-          // Put both of the selected cards into play
-          p1Current.push(p1Cards.splice(p1, 1)[0]);
-          p2Current.push(p2Cards.splice(p2, 1)[0]);
+  let p1CardDisplay = document.getElementById("cardP1Img")
+  let p2CardDisplay = document.getElementById("cardP2Img")
+
+  function player1Stats(){
+    p1CardDisplay.src = `${p1CurrentlyInPlay.img}`
+    document.getElementById("name1").innerText = ("Name: " + p1CurrentlyInPlay.name);
+    document.getElementById("HP1").innerText = ("HP: " + p1CurrentlyInPlay.HP);
+    document.getElementById("Attack1").innerText = ("Attack: " + p1CurrentlyInPlay.Attack);
+    document.getElementById("Defence1").innerText = ("Defence: " + p1CurrentlyInPlay.Defense);
+    document.getElementById("Speed1").innerText = ("Speed: " + p1CurrentlyInPlay.Speed);
+    document.getElementById("Description1").innerText = ("Description: " + p1CurrentlyInPlay.description);
   }
-        
+  function player2Stats(){
+    p2CardDisplay.src = `${p2CurrentlyInPlay.img}`
+    document.getElementById("name2").innerText = ("Name: " + p2CurrentlyInPlay.name);
+    document.getElementById("HP2").innerText = ("HP: " + p2CurrentlyInPlay.HP);
+    document.getElementById("Attack2").innerText = ("Attack: " + p2CurrentlyInPlay.Attack);
+    document.getElementById("Defence2").innerText = ("Defence: " + p2CurrentlyInPlay.Defense);
+    document.getElementById("Speed2").innerText = ("Speed: " + p2CurrentlyInPlay.Speed);
+    document.getElementById("Description2").innerText = ("Description: " + p2CurrentlyInPlay.description);
+  }
+  player1Stats()
+  player2Stats()
+  console.log(p1CurrentlyInPlay)
+  console.log(p2CurrentlyInPlay)
+
   // -------------------------------------------------------------
   // Comparing attributes between Players Cards
   // -------------------------------------------------------------
         
-  function compareAtt(attribute) {
-    let p1Att = p1Current[0][attribute];
-    let p2Att = p2Current[0][attribute];
+  // function compareAtt(attribute) {
+  //   let p1Att = p1Current[0][attribute];
+  //   let p2Att = p2Current[0][attribute];
   
-    if(attribute == "HP" || attribute == "Attack" || attribute == "Defence" || attribute == "Speed") {
-      if(p1Att > p2Att) {
-        winningAtt("p1-Wins");
-      } else if (p2Att > p1Att) {
-        winningAtt("p2-Wins")
-      } else {
-        winningAtt("Draw")
-      }
-    }
-  }
+  //   if(attribute == "HP" || attribute == "Attack" || attribute == "Defence" || attribute == "Speed") {
+  //     if(p1Att > p2Att) {
+  //       winningAtt("p1-Wins");
+  //     } else if (p2Att > p1Att) {
+  //       winningAtt("p2-Wins")
+  //     } else {
+  //       winningAtt("Draw")
+  //     }
+  //   }
+  // }
           
-  function winningAtt()
+  // function winningAtt()
 
   // -------------------------------------------------------------
   // Where to allocate Cards after Outcome of Attributes
   // -------------------------------------------------------------
 
-  function roundOutcome(outcome){
-    if(outcome == "p1-Wins"){
-      p1NoOfCards += 1;
-      p1Cards.push(p2CurrentlyInPlay.splice(0,1)[0]);
-      playGame()
-    } else if(outcome == "p2-Wins"){
-      p2NoOfCards += 1;
-      p2Cards.push(p1CurrentlyInPlay.splice(0,1)[0]);
-      playGame()
-    } else {
-      playGame()
-    }
-  }
+  // function roundOutcome(outcome){
+  //   if(outcome == "p1-Wins"){
+  //     p1NoOfCards += 1;
+  //     p1Cards.push(p2CurrentlyInPlay.splice(0,1)[0]);
+  //     playGame()
+  //   } else if(outcome == "p2-Wins"){
+  //     p2NoOfCards += 1;
+  //     p2Cards.push(p1CurrentlyInPlay.splice(0,1)[0]);
+  //     playGame()
+  //   } else {
+  //     playGame()
+  //   }
+  // }
+
+  // roundOutcome()
 
   // -------------------------------------------------------------
   // Order of Play of the Game
   // -------------------------------------------------------------
   
-  function playGame(){
-    if(p1Cards < 30 && p2Cards < 30){
-      currentCard()
-    } else if (p1Cards.length == 30){
-      return "Player 1 has WON!!!"
-    } else {
-      return "Player 2 has WON!!!"
-    }
-  }
+  // function playGame(){
+  //   if(p1Cards < 30 && p2Cards < 30){
+  //     currentCard()
+  //   } else if (p1Cards.length == 30){
+  //     return "Player 1 has WON!!!"
+  //   } else {
+  //     return "Player 2 has WON!!!"
+  //   }
+  // }
 
   // -------------------------------------------------------------
   // Activating Radio Buttons on Cards
   // -------------------------------------------------------------
-  hpBtn.addEventListener("click", () => {
-    compareAtt("HP")
-  })
+  // hpBtn.addEventListener("click", () => {
+  //   compareAtt("HP1")
+  // })
 
-  hpBtn.addEventListener("click", () => {
-    compareAtt("Attack")
-  })
+  // hpBtn.addEventListener("click", () => {
+  //   compareAtt("Attack1")
+  // })
 
-  hpBtn.addEventListener("click", () => {
-    compareAtt("Defence")
-  })
+  // hpBtn.addEventListener("click", () => {
+  //   compareAtt("Defence1")
+  // })
 
-  hpBtn.addEventListener("click", () => {
-    compareAtt("Speed")
-  })
+  // hpBtn.addEventListener("click", () => {
+  //   compareAtt("Speed1")
+  // })
 
   // -------------------------------------------------------------
   // Radio Buttons on Players Card
   // -------------------------------------------------------------
-  const hpBtn        = document.getElementById("HP");
-  const attackBtn    = document.getElementById("Attack");
-  const defenceBtn   = document.getElementById("Defence");
-  const speedBtn     = document.getElementById("Speed");
+  // const hpBtn        = document.getElementById("HP1");
+  // const attackBtn    = document.getElementById("Attack1");
+  // const defenceBtn   = document.getElementById("Defence1");
+  // const speedBtn     = document.getElementById("Speed1");

@@ -1,4 +1,4 @@
-export const pokedex = [
+const oldPokedex = [
   {
     id: 1,
     name: {
