@@ -360,54 +360,31 @@ const pokedex = [
     img: "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/030.png",
     },
     ]
+
+  // -------------------------------------------------------------
+  // Identify Players cards
+  // -------------------------------------------------------------
+  let p1Cards = [];
+  let p2Cards = [];
+  console.log(p1Cards)
     
+  // -------------------------------------------------------------
+  // Player 1 & 2 No. of Cards Held
+  // -------------------------------------------------------------
+  let p1NoOfCards = document.getElementById("p1NoOfCards")
+  let p2NoOfCards = document.getElementById("p2NoOfCards")
 
-// // -------------------------------------------------------------
-// // Radio Buttons on Players Card
-// // -------------------------------------------------------------
-// const HP        = document.getElementById("HP");
-// const Attack    = document.getElementById("Attack");
-// const Defence   = document.getElementById("Defence");
-// const Speed     = document.getElementById("Speed");
-
-// // -------------------------------------------------------------
-// // Player 1 & 2 score
-// // -------------------------------------------------------------
-// let p1NoOfCards = document.getElementById("p1NoOfCards")
-// let p2NoOfCards = document.getElementById("p2NoOfCards")
-
-// // -------------------------------------------------------------
-// // Players cards
-// // -------------------------------------------------------------
-let p1Cards = [];
-let p2Cards = [];
-console.log(p1Cards)
-
-// -------------------------------------------------------------
-// Current cards in play
-// -------------------------------------------------------------
-let p1CurrentlyInPlay = [];
-let p2CurrentlyInPlay = [];
-
-// // -------------------------------------------------------------
-// // Player 1 & 2 Card Picture
-// // -------------------------------------------------------------
-// let p1CardDisplay  = document.getElementById("cardP1Img");
-// let p2CardDisplay = document.getElementById("cardP2Img");
-
-// -------------------------------------------------------------
-// Card Shuffle
-// -------------------------------------------------------------
-// function shuffleCards () { pokedex.sort(() => Math.random() - 0.5); console.log(pokedex); return pokedex};
-
-//   shuffleCards();
-
-// -------------------------------------------------------------
-// Dealing Card to each Player
-// -------------------------------------------------------------
-    function dealingPlayers() {
-
-
+  // -------------------------------------------------------------
+  // Shuffle Cards
+  // -------------------------------------------------------------
+  function shuffleCards () { pokedex.sort(() => Math.random() - 0.5); console.log(pokedex); return pokedex};
+    
+    shuffleCards();
+      
+  // -------------------------------------------------------------
+  // Allocating Shuffled Cards to each Player
+  // -------------------------------------------------------------
+  function dealingPlayerCard() {
 
     for(i=0;1<30;i++){
       if([i] % 2 == 0){
@@ -415,58 +392,109 @@ let p2CurrentlyInPlay = [];
       } else {
         p2Cards.push(pokedex[i])
       }
+    }
   }
-}
 
-  console.log("START OF P1'S HAND")
-  console.log(p1Cards)
+  // -------------------------------------------------------------
+  // Current cards in play
+  // -------------------------------------------------------------
+  let p1CurrentlyInPlay = [];
+  let p2CurrentlyInPlay = [];
 
-// // -------------------------------------------------------------
-// // Getting a card for each Player
-// // -------------------------------------------------------------
-
-// player1 = p1Cards.shift()
-// console.log(player1)
-
-// function player1Card() {
-//   document.getElementById("name").innerText = player1.name;
-// }
-
-// player1Card()
+  // -------------------------------------------------------------
+  // Place a Card on the Board
+  // -------------------------------------------------------------
 
 
- 
+  // -------------------------------------------------------------
+  // Getting a Current card into play
+  // -------------------------------------------------------------
+  function currentCard() {
+          // Select a random card from both player's deck
+          let p1 = Math.floor((Math.random()* p1Cards.length));
+          let p2 = Math.floor((Math.random()* p2Cards.length));
+        
+          // Put both of the selected cards into play
+          p1Current.push(p1Cards.splice(p1, 1)[0]);
+          p2Current.push(p2Cards.splice(p2, 1)[0]);
+  }
+        
+  // -------------------------------------------------------------
+  // Comparing attributes between Players Cards
+  // -------------------------------------------------------------
+        
+  function compareAtt(attribute) {
+    let p1Att = p1Current[0][attribute];
+    let p2Att = p2Current[0][attribute];
+  
+    if(attribute == "HP" || attribute == "Attack" || attribute == "Defence" || attribute == "Speed") {
+      if(p1Att > p2Att) {
+        winningAtt("p1-Wins");
+      } else if (p2Att > p1Att) {
+        winningAtt("p2-Wins")
+      } else {
+        winningAtt("Draw")
+      }
+    }
+  }
+          
+  function winningAtt()
 
-// // -------------------------------------------------------------
-// // Getting a Current card into play
-// // -------------------------------------------------------------
-// function currentCard() {
-//     // Select a random card from both player's deck
-//     let p1 = Math.floor((Math.random()* p1Cards.length));
-//     let p2 = Math.floor((Math.random()* p2Cards.length));
+  // -------------------------------------------------------------
+  // Where to allocate Cards after Outcome of Attributes
+  // -------------------------------------------------------------
 
-//     // Put both of the selected cards into play
-//     p1Current.push(p1Cards.splice(p1, 1)[0]);
-//     p2Current.push(p2Cards.splice(p2, 1)[0]);
-// }
-    
-// // -------------------------------------------------------------
-// // Comparing attributes between Players
-// // -------------------------------------------------------------
+  function roundOutcome(outcome){
+    if(outcome == "p1-Wins"){
+      p1NoOfCards += 1;
+      p1Cards.push(p2CurrentlyInPlay.splice(0,1)[0]);
+      playGame()
+    } else if(outcome == "p2-Wins"){
+      p2NoOfCards += 1;
+      p2Cards.push(p1CurrentlyInPlay.splice(0,1)[0]);
+      playGame()
+    } else {
+      playGame()
+    }
+  }
 
-// function compareAtt(attribute) {
-//     let p1Att = p1Current[0][attribute];
-//     let p2Att = p2Current[0][attribute];
+  // -------------------------------------------------------------
+  // Order of Play of the Game
+  // -------------------------------------------------------------
+  
+  function playGame(){
+    if(p1Cards < 30 && p2Cards < 30){
+      currentCard()
+    } else if (p1Cards.length == 30){
+      return "Player 1 has WON!!!"
+    } else {
+      return "Player 2 has WON!!!"
+    }
+  }
 
-// if(attribute == "HP" || attribute == "Attack" || attribute == "Defence" || attribute == "Speed") {
-//     if(p1Att > p2Att) {
-//         winningAtt("p1 Wins");
-//     } else if (p2Att > p1Att) {
-//         winningAtt("p2 Wins")
-//     } else {
-//         winningAtt("Draw")
-//     }
-// }
-// }
+  // -------------------------------------------------------------
+  // Activating Radio Buttons on Cards
+  // -------------------------------------------------------------
+  hpBtn.addEventListener("click", () => {
+    compareAtt("HP")
+  })
 
-// function winningAtt()
+  hpBtn.addEventListener("click", () => {
+    compareAtt("Attack")
+  })
+
+  hpBtn.addEventListener("click", () => {
+    compareAtt("Defence")
+  })
+
+  hpBtn.addEventListener("click", () => {
+    compareAtt("Speed")
+  })
+
+  // -------------------------------------------------------------
+  // Radio Buttons on Players Card
+  // -------------------------------------------------------------
+  const hpBtn        = document.getElementById("HP");
+  const attackBtn    = document.getElementById("Attack");
+  const defenceBtn   = document.getElementById("Defence");
+  const speedBtn     = document.getElementById("Speed");
