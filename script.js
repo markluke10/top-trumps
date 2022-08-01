@@ -5,7 +5,7 @@ const pokedex = [
     Attack: 49,
     Defense: 49,
     SpAttack: 65,
-    SpDefence: 65,
+    SpDefense: 65,
     Speed: 45,
     description:
       "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger.",
@@ -17,7 +17,7 @@ const pokedex = [
     Attack: 62,
     Defense: 63,
     SpAttack: 80,
-    SpDefence: 80,
+    SpDefense: 80,
     Speed: 60,
     description:
       "There is a bud on this Pokémon’s back. To support its weight, Ivysaur’s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower soon.",
@@ -29,7 +29,7 @@ const pokedex = [
     Attack: 82,
     Defense: 83,
     SpAttack: 100,
-    SpDefence: 100,
+    SpDefense: 100,
     Speed: 80,
     description:
       "There is a large flower on Venusaur’s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people.",
@@ -41,7 +41,7 @@ const pokedex = [
     Attack: 52,
     Defense: 43,
     SpAttack: 60,
-    SpDefence: 50,
+    SpDefense: 50,
     Speed: 65,
     description:
       "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely.",
@@ -53,7 +53,7 @@ const pokedex = [
     Attack: 64,
     Defense: 58,
     SpAttack: 80,
-    SpDefence: 65,
+    SpDefense: 65,
     Speed: 80,
     description:
       "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color.",
@@ -65,7 +65,7 @@ const pokedex = [
     Attack: 84,
     Defense: 78,
     SpAttack: 109,
-    SpDefence: 85,
+    SpDefense: 85,
     Speed: 100,
     description:
       "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
@@ -77,7 +77,7 @@ const pokedex = [
     Attack: 48,
     Defense: 65,
     SpAttack: 50,
-    SpDefence: 64,
+    SpDefense: 64,
     Speed: 43,
     description:
       "Squirtle’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water, enabling this Pokémon to swim at high speeds.",
@@ -89,7 +89,7 @@ const pokedex = [
     Attack: 63,
     Defense: 80,
     SpAttack: 65,
-    SpDefence: 80,
+    SpDefense: 80,
     Speed: 58,
     description:
       "Its tail is large and covered with a rich, thick fur. The tail becomes increasingly deeper in color as Wartortle ages. The scratches on its shell are evidence of this Pokémon’s toughness as a battler.",
@@ -101,7 +101,7 @@ const pokedex = [
     Attack: 83,
     Defense: 100,
     SpAttack: 85,
-    SpDefence: 105,
+    SpDefense: 105,
     Speed: 78,
     description:
       "Blastoise has water spouts that protrude from its shell. The water spouts are very accurate. They can shoot bullets of water with enough accuracy to strike empty cans from a distance of over 160 feet.",
@@ -113,7 +113,7 @@ const pokedex = [
     Attack: 30,
     Defense: 35,
     SpAttack: 20,
-    SpDefence: 20,
+    SpDefense: 20,
     Speed: 45,
     description:
       "Its body is soft and weak. In nature, its perpetual fate is to be seen by others as food.",
@@ -125,7 +125,7 @@ const pokedex = [
     Attack: 20,
     Defense: 55,
     SpAttack: 25,
-    SpDefence: 25,
+    SpDefense: 25,
     Speed: 30,
     description:
       "Its hard shell doesn’t crack a bit even if Pikipek pecks at it, but it will tip over, spilling out its insides.",
@@ -137,7 +137,7 @@ const pokedex = [
     Attack: 45,
     Defense: 50,
     SpAttack: 90,
-    SpDefence: 80,
+    SpDefense: 80,
     Speed: 70,
     description:
       "Nectar from pretty flowers is its favorite food. In fields of flowers, it has heated battles with Cutiefly for territory.",
@@ -149,7 +149,7 @@ const pokedex = [
     Attack: 35,
     Defense: 30,
     SpAttack: 20,
-    SpDefence: 20,
+    SpDefense: 20,
     Speed: 50,
     description:
       "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose).",
@@ -161,7 +161,7 @@ const pokedex = [
     Attack: 25,
     Defense: 50,
     SpAttack: 25,
-    SpDefence: 25,
+    SpDefense: 25,
     Speed: 35,
     description:
       "Kakuna remains virtually immobile as it clings to a tree. However, on the inside, it is extremely busy as it prepares for its coming evolution. This is evident from how hot the shell becomes to the touch.",
@@ -173,7 +173,7 @@ const pokedex = [
     Attack: 90,
     Defense: 40,
     SpAttack: 45,
-    SpDefence: 80,
+    SpDefense: 80,
     Speed: 75,
     description:
       "Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm.",
@@ -185,7 +185,7 @@ const pokedex = [
     Attack: 45,
     Defense: 40,
     SpAttack: 35,
-    SpDefence: 35,
+    SpDefense: 35,
     Speed: 56,
     description:
       "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
@@ -197,7 +197,7 @@ const pokedex = [
     Attack: 60,
     Defense: 55,
     SpAttack: 50,
-    SpDefence: 50,
+    SpDefense: 50,
     Speed: 71,
     description:
       "Pidgeotto claims a large area as its own territory. This Pokémon flies around, patrolling its living space. If its territory is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws.",
@@ -209,7 +209,7 @@ const pokedex = [
     Attack: 80,
     Defense: 75,
     SpAttack: 70,
-    SpDefence: 70,
+    SpDefense: 70,
     Speed: 101,
     description:
       "This Pokémon has a dazzling plumage of beautifully glossy feathers. Many Trainers are captivated by the striking beauty of the feathers on its head, compelling them to choose Pidgeot as their Pokémon.",
@@ -221,7 +221,7 @@ const pokedex = [
     Attack: 56,
     Defense: 35,
     SpAttack: 25,
-    SpDefence: 35,
+    SpDefense: 35,
     Speed: 72,
     description:
       "This Pokémon is common but hazardous. Its sharp incisors can easily cut right through hard wood.",
@@ -233,7 +233,7 @@ const pokedex = [
     Attack: 81,
     Defense: 60,
     SpAttack: 50,
-    SpDefence: 70,
+    SpDefense: 70,
     Speed: 97,
     description:
       "Its whiskers are essential for maintaining its balance. No matter how friendly you are, it will get angry and bite you if you touch its whiskers.",
@@ -245,7 +245,7 @@ const pokedex = [
     Attack: 60,
     Defense: 30,
     SpAttack: 31,
-    SpDefence: 31,
+    SpDefense: 31,
     Speed: 70,
     description:
       "Due to its short wings, it can’t fly long distances. It wanders about restlessly and pecks at bug Pokémon.",
@@ -257,7 +257,7 @@ const pokedex = [
     Attack: 90,
     Defense: 65,
     SpAttack: 61,
-    SpDefence: 61,
+    SpDefense: 61,
     Speed: 100,
     description:
       "In Alola, fish Pokémon are its prey. It can be seen circling above the ocean searching for food.",
@@ -269,7 +269,7 @@ const pokedex = [
     Attack: 60,
     Defense: 44,
     SpAttack: 40,
-    SpDefence: 54,
+    SpDefense: 54,
     Speed: 55,
     description:
       "The eggs of bird Pokémon are its favorite food. It swallows eggs whole, so sometimes an egg gets stuck, and Ekans faints.",
@@ -281,7 +281,7 @@ const pokedex = [
     Attack: 95,
     Defense: 69,
     SpAttack: 65,
-    SpDefence: 79,
+    SpDefense: 79,
     Speed: 80,
     description:
       "After stunning its opponents with the pattern on its stomach, it quickly wraps them up in its body and waits for them to stop moving.",
@@ -293,7 +293,7 @@ const pokedex = [
     Attack: 55,
     Defense: 40,
     SpAttack: 50,
-    SpDefence: 50,
+    SpDefense: 50,
     Speed: 90,
     description:
       "While sleeping, it generates electricity in the sacs in its cheeks. If it’s not getting enough sleep, it will be able to use only weak electricity.",
@@ -305,7 +305,7 @@ const pokedex = [
     Attack: 90,
     Defense: 55,
     SpAttack: 90,
-    SpDefence: 80,
+    SpDefense: 80,
     Speed: 110,
     description:
       "Because so many Trainers like the way Pikachu looks, you don’t see this Pokémon very often.",
@@ -317,7 +317,7 @@ const pokedex = [
     Attack: 75,
     Defense: 85,
     SpAttack: 20,
-    SpDefence: 30,
+    SpDefense: 30,
     Speed: 40,
     description:
       "When its skin gets wrinkled from moisture, it heads for a volcano. It lies flat on a spot with a lot of geothermal heat and dries itself out.",
@@ -329,7 +329,7 @@ const pokedex = [
     Attack: 100,
     Defense: 110,
     SpAttack: 45,
-    SpDefence: 55,
+    SpDefense: 55,
     Speed: 65,
     description:
       "Thanks to its thick claws, it’s good at climbing trees. There are plenty of Sandslash that park themselves in trees and go right to sleep.",
@@ -341,7 +341,7 @@ const pokedex = [
     Attack: 47,
     Defense: 52,
     SpAttack: 40,
-    SpDefence: 40,
+    SpDefense: 40,
     Speed: 41,
     description:
       "Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon. When enraged, it releases a horrible toxin from its horn.",
@@ -353,7 +353,7 @@ const pokedex = [
     Attack: 62,
     Defense: 67,
     SpAttack: 55,
-    SpDefence: 55,
+    SpDefense: 55,
     Speed: 56,
     description:
       "When Nidorina are with their friends or family, they keep their barbs tucked away to prevent hurting each other. This Pokémon appears to become nervous if separated from the others.",
@@ -369,29 +369,17 @@ const pokedex = [
   // console.log(p1Cards)
     
   // -------------------------------------------------------------
-  // Player 1 & 2 No. of Cards Held
-  // -------------------------------------------------------------
-  // let p1NoOfCards = document.getElementById("p1NoOfCards")
-  // let p2NoOfCards = document.getElementById("p2NoOfCards")
-
-  // function numberOfCardsHeld(){
-  //   document.getElementById("p1NoOfCards") = ("No. of Cards:" + p1Cards);
-  // }
-  // numberOfCardsHeld()
-  // console.log(numberOfCardsHeld)
-
-  // -------------------------------------------------------------
   // Shuffle Cards
   // -------------------------------------------------------------
   function shuffleCards () { pokedex.sort(() => Math.random() - 0.5); console.log(pokedex); return pokedex};
-    
-    shuffleCards();
-      
+  
+  shuffleCards();
+  
   // -------------------------------------------------------------
   // Allocating Shuffled Cards to each Player
   // -------------------------------------------------------------
   function dealingPlayerCard() {
-
+    
     for(i=0;i<30;i++){
       if([i] % 2 == 0){
         p1Cards.push(pokedex[i])
@@ -403,6 +391,21 @@ const pokedex = [
   dealingPlayerCard()
   console.log(p1Cards)
   console.log(p2Cards)
+  
+  // -------------------------------------------------------------
+  // Player 1 & 2 No. of Cards Held
+  // -------------------------------------------------------------
+
+    let p1NoOfCards = document.getElementById("p1NoOfCards")
+    let p2NoOfCards = document.getElementById("p2NoOfCards")
+    let totalPlayer1Cards = p1Cards.length
+    let totalPlayer2Cards = p2Cards.length
+
+  function cardsHeld() {
+    p1NoOfCards.innerText = ("Total No. of Card: " + totalPlayer1Cards);
+    p2NoOfCards.innerText = ("Total No. of Card: " + totalPlayer2Cards);
+  }
+  cardsHeld()
 
   // -------------------------------------------------------------
   // Current cards in play
@@ -413,9 +416,9 @@ const pokedex = [
   // -------------------------------------------------------------
   // Place a Card on the Board
   // -------------------------------------------------------------
+
   p1CurrentlyInPlay = p1Cards.shift()
   p2CurrentlyInPlay = p2Cards.shift()
-
 
   // -------------------------------------------------------------
   // Getting a Current card into play
@@ -428,7 +431,7 @@ const pokedex = [
     document.getElementById("name1").innerText = ("Name: " + p1CurrentlyInPlay.name);
     document.getElementById("HP1").innerText = ("HP: " + p1CurrentlyInPlay.HP);
     document.getElementById("Attack1").innerText = ("Attack: " + p1CurrentlyInPlay.Attack);
-    document.getElementById("Defence1").innerText = ("Defence: " + p1CurrentlyInPlay.Defense);
+    document.getElementById("Defense1").innerText = ("Defense: " + p1CurrentlyInPlay.Defense);
     document.getElementById("Speed1").innerText = ("Speed: " + p1CurrentlyInPlay.Speed);
     document.getElementById("Description1").innerText = ("Description: " + p1CurrentlyInPlay.description);
   }
@@ -437,7 +440,7 @@ const pokedex = [
     document.getElementById("name2").innerText = ("Name: " + p2CurrentlyInPlay.name);
     document.getElementById("HP2").innerText = ("HP: " + p2CurrentlyInPlay.HP);
     document.getElementById("Attack2").innerText = ("Attack: " + p2CurrentlyInPlay.Attack);
-    document.getElementById("Defence2").innerText = ("Defence: " + p2CurrentlyInPlay.Defense);
+    document.getElementById("Defense2").innerText = ("Defense: " + p2CurrentlyInPlay.Defense);
     document.getElementById("Speed2").innerText = ("Speed: " + p2CurrentlyInPlay.Speed);
     document.getElementById("Description2").innerText = ("Description: " + p2CurrentlyInPlay.description);
   }
@@ -447,84 +450,127 @@ const pokedex = [
   console.log(p2CurrentlyInPlay)
 
   // -------------------------------------------------------------
+  // Creating a Blank Card
+  // -------------------------------------------------------------
+  // let p2BackOfCardCardDisplay = document.getElementById("blankCardImg")
+  // let img1 = (src="\Images\back_of_image.jpg")
+  
+  // function blankCard(){
+  //   document.getElementById("cardP2") = `${p2BackOfCardCardDisplay.img1}`
+  // }
+  // blankCard()
+  // function buildComputerCard() {
+  //   // function to display the current card of the computer
+  //   computerCardDiv.classList.toggle("flip");
+  
+  //   var computerCardBack = document.getElementById("computerCardBack");
+  //   computerCardBack.style.height = $(playercard).height() + "px";
+  //   var computercardBackHeader=document.getElementById("computercardBackHeader");
+  //   computercardBackHeader.innerHTML =  currentComputerCard[0];
+        // turn over computer card
+        // computerCardDiv.classList.toggle("flip");
+
+  // -------------------------------------------------------------
   // Comparing attributes between Players Cards
   // -------------------------------------------------------------
-        
-  // function compareAtt(attribute) {
-  //   let p1Atts = p1CurrentlyInPlay;
-  //   let p2Atts = p2CurrentlyInPlay;
+  // hpBtn.addEventListener('click', compareHPAtt);
+  // attackBtn.addEventListener('click', compareAttackAtt);
+  // DefenseBtn.addEventListener('click', compareDefenseAtt);
+  speedBtn.addEventListener('click', compareSpeedAtt);
   
-  //   if(attribute == "HP" || attribute == "Attack" || attribute == "Defence" || attribute == "Speed") {
-  //     if(p1Atts > p2Atts) {
-  //       winningAtt("p1-Wins");
-  //     } else if (p2Atts > p1Atts) {
-  //       winningAtt("p2-Wins")
-  //     } else {
-  //       winningAtt("Draw")
-  //     }
-  //   }
-  // }
-          
-  // function winningAtt()
-  // console.log(winningAtt)
-
-  // -------------------------------------------------------------
-  // Where to allocate Cards after Outcome of Attributes
-  // -------------------------------------------------------------
-
-  // function roundOutcome(outcome){
-  //   if(outcome == "p1-Wins"){
-  //     p1NoOfCards += 1;
-  //     p1Cards.push(p2CurrentlyInPlay.splice(0,1)[0]);
-  //     playGame()
-  //   } else if(outcome == "p2-Wins"){
-  //     p2NoOfCards += 1;
-  //     p2Cards.push(p1CurrentlyInPlay.splice(0,1)[0]);
-  //     playGame()
+  // function compareHPAtt() {
+  //   if (p1CurrentlyInPlay.HP > p2CurrentlyInPlay.HP) {
+  //     "Player 1 Wins"
+  //     console.log("Player1 Wins")
+  //   } else if (p1CurrentlyInPlay.HP < p2CurrentlyInPlay.HP) {
+  //     "Player 2 Wins"
+  //     console.log("Player2 Wins")
   //   } else {
-  //     playGame()
+  //     "Draw"
+  //     console.log("Draw")
   //   }
   // }
+  // function compareAttackAtt() {
+  //   if (p1CurrentlyInPlay.Attack > p2CurrentlyInPlay.Attack) {
+  //     "Player 1 Wins"
+  //     console.log("Player1 Wins")
+  //   } else if (p1CurrentlyInPlay.Attack < p2CurrentlyInPlay.Attack) {
+  //     "Player 2 Wins"
+  //     console.log("Player2 Wins")
+  //   } else {
+  //     "Draw"
+  //     console.log("Draw")
+  //   }
+  // }
+  // function compareDefenseAtt() {
+  //   if (p1CurrentlyInPlay.Defense > p2CurrentlyInPlay.Defense) {
+  //     "Player 1 Wins"
+  //     console.log("Player1 Wins")
+  //   } else if (p1CurrentlyInPlay.Defense < p2CurrentlyInPlay.Defense) {
+  //     "Player 2 Wins"
+  //     console.log("Player2 Wins")
+  //   } else {
+  //     "Draw"
+  //     console.log("Draw")
+  //   }
+  // }
+  function compareSpeedAtt() {
+    if (p1CurrentlyInPlay.Speed > p2CurrentlyInPlay.Speed) {
+      buttonPressed("Player 1 Wins")
+      console.log("Player1 Wins")
+    } else if (p1CurrentlyInPlay.Speed < p2CurrentlyInPlay.Speed) {
+      buttonPressed("Player 2 Wins")
+      console.log("Player2 Wins")
+    } else {
+      buttonPressed("Draw")
+      console.log("Draw")
+    }
+  }
 
-  // roundOutcome()
+
+  // -------------------------------------------------------------
+  // Where to allocate Cards after Attribute of Button Pressed 
+  // -------------------------------------------------------------
+
+  function buttonPressed(outcome){
+    if(outcome === "Player1 Wins"){
+      console.log("Player 1 Wins")
+      p1Cards.push(p1CurrentlyInPlay)
+      p1Cards.push(p2CurrentlyInPlay)
+      totalPlayer1Cards = p1Cards.length;
+      totalPlayer2Cards = p2Cards.length;
+      p1Cards.length += 1
+      p2Cards.length -= 1
+    } else if(outcome === "Player2 Wins"){
+      console.log("Player 2 Wins")
+      p2Cards.push(p2CurrentlyInPlay)
+      p2Cards.push(p1CurrentlyInPlay)
+      totalPlayer2Cards = p2Cards.length;
+      totalPlayer1Cards = p1Cards.length;
+      p2Cards.length += 1
+      p1Cards.length -= 1
+    } else {
+      console.log("Draw")
+      p1Cards.length += 1
+      p2Cards.length -= 0
+      // continueGame()
+    }
+  }
+
+  buttonPressed()
+
+
 
   // -------------------------------------------------------------
   // Conculsion of the Game
   // -------------------------------------------------------------
   
   // function endGame(){
-  //   if(p1Cards < 30 && p2Cards < 30){
-  //     currentCard()
+  //   if(p1Cards.length < 30 && p2Cards.length < 30){
+  //     continueGame()
   //   } else if (p1Cards.length == 30){
   //     return "Player 1 has WON!!!"
   //   } else {
   //     return "Player 2 has WON!!!"
   //   }
   // }
-
-  // -------------------------------------------------------------
-  // Activating Radio Buttons on Cards
-  // -------------------------------------------------------------
-  // hpBtn.addEventListener("click", () => {
-  //   compareAtt("HP1")
-  // })
-
-  // hpBtn.addEventListener("click", () => {
-  //   compareAtt("Attack1")
-  // })
-
-  // hpBtn.addEventListener("click", () => {
-  //   compareAtt("Defence1")
-  // })
-
-  // hpBtn.addEventListener("click", () => {
-  //   compareAtt("Speed1")
-  // })
-
-  // -------------------------------------------------------------
-  // Radio Buttons on Players Card
-  // -------------------------------------------------------------
-  // const hpBtn        = document.getElementById("HP1");
-  // const attackBtn    = document.getElementById("Attack1");
-  // const defenceBtn   = document.getElementById("Defence1");
-  // const speedBtn     = document.getElementById("Speed1");
