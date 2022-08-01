@@ -473,47 +473,47 @@ const pokedex = [
   // -------------------------------------------------------------
   // Comparing attributes between Players Cards
   // -------------------------------------------------------------
-  // hpBtn.addEventListener('click', compareHPAtt);
-  // attackBtn.addEventListener('click', compareAttackAtt);
-  // DefenseBtn.addEventListener('click', compareDefenseAtt);
+  hpBtn.addEventListener('click', compareHPAtt);
+  attackBtn.addEventListener('click', compareAttackAtt);
+  DefenseBtn.addEventListener('click', compareDefenseAtt);
   speedBtn.addEventListener('click', compareSpeedAtt);
   
-  // function compareHPAtt() {
-  //   if (p1CurrentlyInPlay.HP > p2CurrentlyInPlay.HP) {
-  //     "Player 1 Wins"
-  //     console.log("Player1 Wins")
-  //   } else if (p1CurrentlyInPlay.HP < p2CurrentlyInPlay.HP) {
-  //     "Player 2 Wins"
-  //     console.log("Player2 Wins")
-  //   } else {
-  //     "Draw"
-  //     console.log("Draw")
-  //   }
-  // }
-  // function compareAttackAtt() {
-  //   if (p1CurrentlyInPlay.Attack > p2CurrentlyInPlay.Attack) {
-  //     "Player 1 Wins"
-  //     console.log("Player1 Wins")
-  //   } else if (p1CurrentlyInPlay.Attack < p2CurrentlyInPlay.Attack) {
-  //     "Player 2 Wins"
-  //     console.log("Player2 Wins")
-  //   } else {
-  //     "Draw"
-  //     console.log("Draw")
-  //   }
-  // }
-  // function compareDefenseAtt() {
-  //   if (p1CurrentlyInPlay.Defense > p2CurrentlyInPlay.Defense) {
-  //     "Player 1 Wins"
-  //     console.log("Player1 Wins")
-  //   } else if (p1CurrentlyInPlay.Defense < p2CurrentlyInPlay.Defense) {
-  //     "Player 2 Wins"
-  //     console.log("Player2 Wins")
-  //   } else {
-  //     "Draw"
-  //     console.log("Draw")
-  //   }
-  // }
+  function compareHPAtt() {
+    if (p1CurrentlyInPlay.HP > p2CurrentlyInPlay.HP) {
+      "Player 1 Wins"
+      console.log("Player1 Wins")
+    } else if (p1CurrentlyInPlay.HP < p2CurrentlyInPlay.HP) {
+      "Player 2 Wins"
+      console.log("Player2 Wins")
+    } else {
+      "Draw"
+      console.log("Draw")
+    }
+  }
+  function compareAttackAtt() {
+    if (p1CurrentlyInPlay.Attack > p2CurrentlyInPlay.Attack) {
+      "Player 1 Wins"
+      console.log("Player1 Wins")
+    } else if (p1CurrentlyInPlay.Attack < p2CurrentlyInPlay.Attack) {
+      "Player 2 Wins"
+      console.log("Player2 Wins")
+    } else {
+      "Draw"
+      console.log("Draw")
+    }
+  }
+  function compareDefenseAtt() {
+    if (p1CurrentlyInPlay.Defense > p2CurrentlyInPlay.Defense) {
+      "Player 1 Wins"
+      console.log("Player1 Wins")
+    } else if (p1CurrentlyInPlay.Defense < p2CurrentlyInPlay.Defense) {
+      "Player 2 Wins"
+      console.log("Player2 Wins")
+    } else {
+      "Draw"
+      console.log("Draw")
+    }
+  }
   function compareSpeedAtt() {
     if (p1CurrentlyInPlay.Speed > p2CurrentlyInPlay.Speed) {
       buttonPressed("Player 1 Wins")
@@ -553,7 +553,7 @@ const pokedex = [
       console.log("Draw")
       p1Cards.length += 1
       p2Cards.length -= 0
-      // continueGame()
+
     }
   }
 
